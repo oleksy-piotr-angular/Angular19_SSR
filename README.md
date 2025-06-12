@@ -19,6 +19,17 @@ SOURCE: https://www.youtube.com/watch?v=6Wn3sy0j4so&list=PL_euSNU_eLbc91j2QvA_UR
      - node node-main.js #to run node server
 
 174. Prerender unparameterized static routes in Angular 19 SSR using config object with Routes File
+
+     https://v19.angular.dev/guide/prerendering
+
+
+    Commands:
+
+    - npm run build
+
+    On default all not parametrized Routes will be Static with SSR.
+    We can define which Routes should be static generated as static on build with "route.txt" settings
+
 175. Prerender the Parametrized dynamic routes in Angular 19 SSR for SEO Load Time Improve
 176. 🌐 "Hybrid Rendering in Angular 19 🔥 Combine SSR, CSR & SSG for Next-Level Apps!"
 177. Customizing build-time prerendering using Parameterized routes & Fallback strategies Angular 19
