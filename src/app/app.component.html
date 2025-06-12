@@ -5,5 +5,24 @@
     browser.
   </p>
 </div>
-<app-http-cache></app-http-cache>
+<ul>
+  <li>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active"> HomePage </a>
+  </li>
+  <li>
+    <a [routerLink]="['/httpcache']" routerLinkActive="router-link-active">
+      Http Cache
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/products/1']" routerLinkActive="router-link-active">
+      Product 1
+    </a>
+  </li>
+  <li>
+    <a [routerLink]="['/products/3']" routerLinkActive="router-link-active">
+      Product 3
+    </a>
+  </li>
+</ul>
 <router-outlet></router-outlet>

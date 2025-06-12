@@ -6,6 +6,11 @@ SOURCE: https://www.youtube.com/watch?v=6Wn3sy0j4so&list=PL_euSNU_eLbc91j2QvA_UR
 170. Angular 19 HttpClient Caching Explained for both Get & Post Requests using includePostRequests
 171. 🚀 Angular 19 SSR afterNextRender for implementing Browser-Only Logic! 🌐
 172. 🎯 Prerendering Magic in Angular 19: Standalone Components for Static Pages! ✨📦
+     https://v19.angular.dev/guide/prerendering
+
+     Commands:
+     npm start #execute "ng serve"
+
 173. Setup Nodejs Api Server using Express for making Api calls in the Angular 19 SSr Pre-rendering
 174. Prerender unparameterized static routes in Angular 19 SSR using config object with Routes File
 175. Prerender the Parametrized dynamic routes in Angular 19 SSR for SEO Load Time Improve

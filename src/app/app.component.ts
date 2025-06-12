@@ -7,12 +7,11 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HttpCacheComponent } from './http-cache/http-cache.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HttpCacheComponent],
+  imports: [RouterOutlet, RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
