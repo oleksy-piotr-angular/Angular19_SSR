@@ -1,6 +1,9 @@
+// Główny plik uruchamiający aplikację Angular po stronie przeglądarki (browser bootstrap).
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { appConfig } from './app/app.config';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+// Uruchomienie głównego komponentu aplikacji z konfiguracją.
+bootstrapApplication(AppComponent, appConfig).catch((err) =>
+  console.error(err)
+);
