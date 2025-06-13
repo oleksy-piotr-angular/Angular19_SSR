@@ -1,2 +1,0 @@
-/products/1
-/products/3
