@@ -45,6 +45,15 @@ SOURCE: https://www.youtube.com/watch?v=6Wn3sy0j4so&list=PL_euSNU_eLbc91j2QvA_UR
 
       - ng new --ssr --server-routing
 
+      Need to run this order of commands
+      1. npm run build
+      2. npm run serve:ssr:angular-server
+
+      3. npm run watch #rebuild after code will be changed by developer
+
+      NOTE!: if there is no changes after rebuild the code than try rerun
+      "npm run serve:ssr:angular-server"
+
 177. Customizing build-time prerendering using Parameterized routes & Fallback strategies Angular 19
 178. ✨ Angular SSR Magic: REQUEST, RESPONSE_INIT, and REQUEST_CONTEXT Demystified! 🪄
 179. 🖥️ Angular 19 Hydration: The Ultimate Guide to Smooth SSR with No Flickers! 💡🚀
