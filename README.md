@@ -67,3 +67,12 @@ NOTE: "Prerendered 2 static routes." after "npm run build" command
 184. 🛠️ Angular @defer Testing Tips & Tricks! 🎯 Perfect Your Skills with This Guide 🚀
 185. 🔥 Angular Incremental Hydration 🔥 Boost FID, Reduce CLS & Improve UX Now! 🚀
 186. Controlling hydration of content with triggers - Angular 19 Incremental Hydration
+
+REMEMBER:
+If you working with SSR and you want to see an effect you need to:
+
+1. build an app:
+   "npm run build"
+
+2. serve this App with Node express using this command:
+   npm run serve:ssr:<PROJECT-NAME>
