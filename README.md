@@ -60,6 +60,11 @@ NOTE: "Prerendered 2 static routes." after "npm run build" command
 
 178. ✨ Angular SSR Magic: REQUEST, RESPONSE_INIT, and REQUEST_CONTEXT Demystified! 🪄
 179. 🖥️ Angular 19 Hydration: The Ultimate Guide to Smooth SSR with No Flickers! 💡🚀
+
+
+    What is Hydration?
+    https://angular.dev/guide/hydration
+
 180. 🔥 Master Angular Hydration! 🌐 SSR Tips, Event Replay & Debugging Secrets Revealed!
 181. ❌ Avoid These Hydration Errors and Constraints! 🛑 Top Mistakes Killing Your Angular App 🚨
 182. 📊 Angular @defer Magic: Optimize Loading with Placeholders, Errors & Triggers! 💻✨
