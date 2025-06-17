@@ -66,6 +66,20 @@ NOTE: "Prerendered 2 static routes." after "npm run build" command
     https://angular.dev/guide/hydration
 
 180. 🔥 Master Angular Hydration! 🌐 SSR Tips, Event Replay & Debugging Secrets Revealed!
+
+
+    If you want to check Angular hydration you need to obviously serve with SSR:
+    "npm run serve:ssr:<Project-Name>"
+
+    You should "Inspect" and click angular Tab but in my case it "Angular application not detected".
+
+    So I check "npm run start" and on localhost:4200 I've seen hydrated Components on Inspect > Angular tab
+
+    "withEventReplay()"
+    :
+    [https://angular.dev/api/platform-browser/withEventReplay]
+    Enables support for replaying user events (e.g. clicks) that happened on a page before hydration logic has completed. Once an application is hydrated, all captured events are replayed and relevant event listeners are executed.
+
 181. ❌ Avoid These Hydration Errors and Constraints! 🛑 Top Mistakes Killing Your Angular App 🚨
 182. 📊 Angular @defer Magic: Optimize Loading with Placeholders, Errors & Triggers! 💻✨
 183. 🎯 @defer Triggers EXPLAINED! Lazy Load Content💡 Step-by-Step to Improve Performance FAST! 💻

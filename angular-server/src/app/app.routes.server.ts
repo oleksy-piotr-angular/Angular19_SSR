@@ -7,32 +7,19 @@ export const serverRoutes: ServerRoute[] = [
   {
     path: '',
     renderMode: RenderMode.Server,
-  } /**Server-Side Rendering (SSR) mode, where content is rendered on the server for each request. */,
+  } /** it will be hydrated because SSR mode */,
   {
     path: 'contact',
     renderMode: RenderMode.Client,
-  } /**Client-Side Rendering (CSR) mode, where content is rendered on the client side in the browser. */,
-
-  //! PRERENDER:
-  //? with settings below those "ids" for products will be render as static HTML after build.
+  } /**It won't be hydrated because it is render CSR not SSR */,
   {
     path: 'product/:id',
     renderMode: RenderMode.Prerender,
     async getPrerenderParams() {
-      //!we can do this statically like this
-      //return [{ id: '1' }, { id: '2' }];
-
-      //?-----------------------------------------------------------------------------------------
-
-      //!or more dynamically with PostService:
       const posts = inject(PostService);
-
-      // need to await when call this method because it will return a Promise
       const ids = await posts.getPosts();
-
-      //transform the array with map before return
       return ids.map((id) => ({ id: `${id}` }));
     },
     fallback: PrerenderFallback.None,
-  } /**Static Site Generation (SSG) mode, where content is pre-rendered at build time and served as static files. */,
+  } /** it will be hydrated because SSG mode */,
 ];
