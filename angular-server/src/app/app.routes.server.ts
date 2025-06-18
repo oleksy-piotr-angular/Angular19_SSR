@@ -9,6 +9,10 @@ export const serverRoutes: ServerRoute[] = [
     renderMode: RenderMode.Server,
   } /** it will be hydrated because SSR mode */,
   {
+    path: 'home2',
+    renderMode: RenderMode.Server,
+  } /** it will be hydrated because SSR mode */,
+  {
     path: 'contact',
     renderMode: RenderMode.Client,
   } /**It won't be hydrated because it is render CSR not SSR */,
