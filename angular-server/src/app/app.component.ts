@@ -6,10 +6,11 @@ import {
   RESPONSE_INIT,
 } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { ProductComponent } from './product/product.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink /*ProductComponent*/],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

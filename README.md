@@ -99,6 +99,34 @@ NOTE: "Prerendered 2 static routes." after "npm run build" command
     Enables support for replaying user events (e.g. clicks) that happened on a page before hydration logic has completed. Once an application is hydrated, all captured events are replayed and relevant event listeners are executed.
 
 181. ❌ Avoid These Hydration Errors and Constraints! 🛑 Top Mistakes Killing Your Angular App 🚨
+
+!!IMPORTANT!! if app is not refreshed in SSR mode when you make any changes in your template then: "CTRL+SHIFT+R" in CHROME
+
+    Avoid components that manipulate DOM using native DOM APIs or using "innerHTML", "outerHTML".
+    f.e.
+    - accessing the document,
+    - querying for specific elements,
+    - injecting additional nodes using "appendChild"
+    - detaching DOM nodes and moving tem to the other location
+
+    REASON:
+    [Angular is unaware of these DOM changes and cannot resolve them during the hydration process]
+
+---
+
+    Be sure to type correct HTML structure when you creating a template HTML code.
+
+---
+
+    Hydration Constraints:
+    https://angular.dev/guide/hydration#constraints
+
+    Error Encyclopedia:
+    https://angular.dev/errors
+
+HOW to Skip Hydration for Particular Component:
+"https://angular.dev/guide/hydration#how-to-skip-hydration-for-particular-components"
+
 182. 📊 Angular @defer Magic: Optimize Loading with Placeholders, Errors & Triggers! 💻✨
 183. 🎯 @defer Triggers EXPLAINED! Lazy Load Content💡 Step-by-Step to Improve Performance FAST! 💻
 184. 🛠️ Angular @defer Testing Tips & Tricks! 🎯 Perfect Your Skills with This Guide 🚀

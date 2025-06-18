@@ -3,6 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
+  host: { ngSkipHydration: 'true' } /* To skip hydration in this component */,
   imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

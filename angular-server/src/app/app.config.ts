@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import {
   provideClientHydration,
   withEventReplay,
+  withI18nSupport,
 } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
@@ -13,6 +14,8 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideHttpClient(withFetch()),
     provideRouter(routes),
-    provideClientHydration(withEventReplay()),
+    provideClientHydration(withEventReplay(), withI18nSupport()),
   ],
+
+  //*withI18nSupport(): Enables support for hydrating i18n blocks.
 };
