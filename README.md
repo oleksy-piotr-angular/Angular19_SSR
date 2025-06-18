@@ -74,6 +74,24 @@ NOTE: "Prerendered 2 static routes." after "npm run build" command
     You should "Inspect" and click angular Tab but in my case it "Angular application not detected".
 
     So I check "npm run start" and on localhost:4200 I've seen hydrated Components on Inspect > Angular tab
+    ____________
+    IMPORTANT!!!
+    ____________
+
+    to use Angular DevTools with SSR build we need to build project in
+    development mode
+
+    It is possible when you run command:
+
+    "npm run buildDev #this script was created by me"
+
+    or
+
+    "npm run watch"
+
+    then serve it with Node JS Express:
+
+    "npm run serve:ssr:angular-server"
 
     "withEventReplay()"
     :
