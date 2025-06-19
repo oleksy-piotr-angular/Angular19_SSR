@@ -136,6 +136,11 @@ NOTE! it has been shown in project without SSR
 it should create extra "chunk-<SOME-STRING>.js" file with lazy loaded component which loading has been defer.
 
 183. 🎯 @defer Triggers EXPLAINED! Lazy Load Content💡 Step-by-Step to Improve Performance FAST! 💻
+
+
+    More info:
+    "https://angular.dev/guide/templates/defer"
+
 184. 🛠️ Angular @defer Testing Tips & Tricks! 🎯 Perfect Your Skills with This Guide 🚀
 185. 🔥 Angular Incremental Hydration 🔥 Boost FID, Reduce CLS & Improve UX Now! 🚀
 186. Controlling hydration of content with triggers - Angular 19 Incremental Hydration

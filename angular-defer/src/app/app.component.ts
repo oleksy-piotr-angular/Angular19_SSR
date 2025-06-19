@@ -10,4 +10,7 @@ import { LargeComponentComponent } from './large-component/large-component.compo
 })
 export class AppComponent {
   title = 'angular-defer';
+  //! you can modify this property in Angular DevTools when you click
+  //! Inspect the App and change this property there
+  showLargeComponent = false;
 }
