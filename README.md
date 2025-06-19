@@ -171,3 +171,5 @@ If you working with SSR and you want to see an effect you need to:
 
 2. serve this App with Node express using this command:
    npm run serve:ssr:<PROJECT-NAME>
+
+COMPLETED!!!
