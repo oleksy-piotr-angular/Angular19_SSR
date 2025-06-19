@@ -154,6 +154,15 @@ it should create extra "chunk-<SOME-STRING>.js" file with lazy loaded component 
 
 186. Controlling hydration of content with triggers - Angular 19 Incremental Hydration
 
+     More info:
+     "https://angular.dev/guide/incremental-hydration"
+
+     Note:
+     Incremental hydration is an advanced type of hydration that can leave sections of your application dehydrated and incrementally trigger hydration of those sections as they are needed.
+
+MORE INFO in ANGULAR DOCUMENTATION:
+"https://angular.dev/guide/performance"
+
 REMEMBER:
 If you working with SSR and you want to see an effect you need to:
 

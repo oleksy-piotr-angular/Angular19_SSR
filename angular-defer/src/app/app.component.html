@@ -1,17 +1,71 @@
 <div>Component app</div>
 
-<router-outlet></router-outlet>
-<!--! Alternatively, you can specify a template reference variable in the same template as the @defer block as the element that is watched to enter the viewport. This variable is passed in as a parameter on the viewport trigger. -->
+<!--! "hydrate" Keyword that indicates when the block's content will be hydrated. You can use 'on' and 'when' conditions as hydration triggers, or 'hydrate never' to disable hydration for this block. -->
 
-<div class="">
-  @defer {
-  <p>on viewport(triggerElement)</p>
+  @defer(hydrate on idle) {
+  <p>"hydrate on idle"</p>
   <app-large-component />
-  }@loading(after 100ms; minimum 1s){
-  <p>Fetching Content</p>
-  } @placeholder(minimum 500ms) {
-  <p>please wait at least 500ms when large component has been loaded</p>
-  } @error {
-  <p>Failed to load a content. Please try again later</p>
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on idle"</p>
   }
-</div>
+  <br />
+
+  @defer(hydrate on viewport) {
+  <p>"hydrate on viewport"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on viewport"</p>
+  }
+  <br />
+
+  @defer(hydrate on interaction) {
+  <p>"hydrate on interaction"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on interaction"</p>
+  }
+  <br />
+  
+  @defer(hydrate on hover) {
+  <p>"hydrate on hover"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on hover"</p>
+  }
+  <br />
+
+  @defer(hydrate on immediate) {
+  <p>"hydrate on immediate"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on immediate"</p>
+  }
+  <br />
+
+  @defer(hydrate on timer(500ms)) {
+  <p>"hydrate on timer(500ms)"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate on timer(500ms)"</p>
+  }
+  <br />
+
+   @defer(hydrate when showLargeComponent) {
+  <p>"hydrate when showLargeComponent"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate when showLargeComponent"</p>
+  }
+  <br />
+
+   @defer(hydrate never) {
+  <p>"hydrate never"</p>
+  <app-large-component />
+  } @placeholder {
+  <p>Loading LargeComponent and "hydrate never"</p>
+  }
+  <br />
+  
+  
+
+<router-outlet></router-outlet>
