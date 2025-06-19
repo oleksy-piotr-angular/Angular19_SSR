@@ -149,6 +149,9 @@ it should create extra "chunk-<SOME-STRING>.js" file with lazy loaded component 
      npm test
 
 185. 🔥 Angular Incremental Hydration 🔥 Boost FID, Reduce CLS & Improve UX Now! 🚀
+     Note:
+     Review everything you learned during this tutorial in this chapter.
+
 186. Controlling hydration of content with triggers - Angular 19 Incremental Hydration
 
 REMEMBER:
